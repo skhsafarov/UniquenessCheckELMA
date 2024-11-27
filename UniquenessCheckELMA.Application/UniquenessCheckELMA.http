@@ -1,0 +1,6 @@
+@UniquenessCheckELMA_HostAddress = http://localhost:5157
+
+GET {{UniquenessCheckELMA_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

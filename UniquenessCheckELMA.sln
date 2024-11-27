@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniquenessCheckELMA.AppHost", "UniquenessCheckELMA.AppHost\UniquenessCheckELMA.AppHost.csproj", "{5BCDD3EC-3284-47C4-A346-F2E2C9AA16B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniquenessCheckELMA.ServiceDefaults", "UniquenessCheckELMA.ServiceDefaults\UniquenessCheckELMA.ServiceDefaults.csproj", "{3915192D-E921-4282-8B61-EF3F8F158B82}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniquenessCheckELMA.Domain", "UniquenessCheckELMA.Domain\UniquenessCheckELMA.Domain.csproj", "{0444CB55-71B4-460B-8305-F347BEA0CC80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniquenessCheckELMA.Infrastructure", "UniquenessCheckELMA.Infrastructure\UniquenessCheckELMA.Infrastructure.csproj", "{9F122544-C35C-44DB-AC39-E077D6CE4157}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniquenessCheckELMA.Application", "UniquenessCheckELMA.Application\UniquenessCheckELMA.Application.csproj", "{B821DB03-CE02-46D2-A84D-3B0B87A0EC55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5BCDD3EC-3284-47C4-A346-F2E2C9AA16B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BCDD3EC-3284-47C4-A346-F2E2C9AA16B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BCDD3EC-3284-47C4-A346-F2E2C9AA16B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BCDD3EC-3284-47C4-A346-F2E2C9AA16B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3915192D-E921-4282-8B61-EF3F8F158B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3915192D-E921-4282-8B61-EF3F8F158B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3915192D-E921-4282-8B61-EF3F8F158B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3915192D-E921-4282-8B61-EF3F8F158B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0444CB55-71B4-460B-8305-F347BEA0CC80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0444CB55-71B4-460B-8305-F347BEA0CC80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0444CB55-71B4-460B-8305-F347BEA0CC80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0444CB55-71B4-460B-8305-F347BEA0CC80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F122544-C35C-44DB-AC39-E077D6CE4157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F122544-C35C-44DB-AC39-E077D6CE4157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F122544-C35C-44DB-AC39-E077D6CE4157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F122544-C35C-44DB-AC39-E077D6CE4157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B821DB03-CE02-46D2-A84D-3B0B87A0EC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B821DB03-CE02-46D2-A84D-3B0B87A0EC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B821DB03-CE02-46D2-A84D-3B0B87A0EC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B821DB03-CE02-46D2-A84D-3B0B87A0EC55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB303A6C-45E1-464F-AE9C-C77CCB795FF5}
+	EndGlobalSection
+EndGlobal
