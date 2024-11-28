@@ -27,7 +27,7 @@ public class Program
         // Configure the HTTP request pipeline.
         app.MapDefaultEndpoints();
 
-        if (app.Environment.IsDevelopment())
+        //if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
             app.UseSwaggerUI();
