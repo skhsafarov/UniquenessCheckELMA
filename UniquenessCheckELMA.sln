@@ -19,7 +19,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решен
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		README.md = README.md
+		srs.pdf = srs.pdf
 	EndProjectSection
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E21F8887-1B5F-4F70-A678-929BCB280EA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +50,10 @@ Global
 		{B821DB03-CE02-46D2-A84D-3B0B87A0EC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B821DB03-CE02-46D2-A84D-3B0B87A0EC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B821DB03-CE02-46D2-A84D-3B0B87A0EC55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E21F8887-1B5F-4F70-A678-929BCB280EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E21F8887-1B5F-4F70-A678-929BCB280EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E21F8887-1B5F-4F70-A678-929BCB280EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E21F8887-1B5F-4F70-A678-929BCB280EA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

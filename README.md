@@ -1,4 +1,8 @@
-﻿# В контексте DDD (Domain-Driven Design) на C# проекты обычно делят на три ключевые части: Application, Infrastructure, и Domain. Вот краткое описание каждого из них и примеры их содержания:
+﻿# Software Requirements Specification
+
+<iframe src="srs.pdf" width="100%" height="600px"></iframe>
+
+# В контексте DDD (Domain-Driven Design) на C# проекты обычно делят на три ключевые части: Application, Infrastructure, и Domain. Вот краткое описание каждого из них и примеры их содержания:
 
 ## 1. Domain (Доменный уровень)
 
