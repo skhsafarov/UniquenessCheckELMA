@@ -1,6 +1,6 @@
 ﻿# Software Requirements Specification
 
-<iframe src="https://github.com/skhsafarov/UniquenessCheckELMA/blob/master/srs.pdf" width="100%" height="600px"></iframe>
+<iframe src="https://raw.githubusercontent.com/skhsafarov/UniquenessCheckELMA/d24fc9ce189c318ac705232b60a2745aafd1d333/srs.pdf" width="100%" height="600px"></iframe>
 
 # В контексте DDD (Domain-Driven Design) на C# проекты обычно делят на три ключевые части: Application, Infrastructure, и Domain. Вот краткое описание каждого из них и примеры их содержания:
 
