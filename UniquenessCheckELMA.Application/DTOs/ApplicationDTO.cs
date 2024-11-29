@@ -12,8 +12,8 @@ namespace UniquenessCheckELMA.Application.DTOs
         [Range(10000000000000, 99999999999999, ErrorMessage = "ПИНФЛ должен состоять и 14 цифр!")]
         public long PhysicalPersonId { get; set; }
         public long ProcessInstanceId { get; set; }
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
-        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime? CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime? UpdatedAt { get; set; } = DateTime.UtcNow;
 
         /// <summary>
         /// Mapping from Entity to DTO
@@ -45,8 +45,8 @@ namespace UniquenessCheckELMA.Application.DTOs
                 IsActive = dto.IsActive,
                 PhysicalPersonId = dto.PhysicalPersonId,
                 ProcessInstanceId = dto.ProcessInstanceId,
-                CreatedAt = dto.CreatedAt,
-                UpdatedAt = dto.UpdatedAt
+                CreatedAt = dto.CreatedAt ?? DateTime.UtcNow,
+                UpdatedAt = dto.UpdatedAt ?? DateTime.UtcNow
             };
         }
     }
