@@ -9,7 +9,7 @@ public static class DbContextExtension
     {
         try
         {
-            _context.SaveChangesAsync().Wait();
+            var res = _context.SaveChangesAsync().Result;
             result = default!;
             return true;
         }
@@ -27,7 +27,7 @@ public static class DbContextExtension
         }
         catch (Exception ex)
         {
-            result = controller.StatusCode(StatusCodes.Status500InternalServerError, "Хуй!");
+            result = controller.StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
         }
         return false;
     }
