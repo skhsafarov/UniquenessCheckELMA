@@ -100,7 +100,7 @@ namespace UniquenessCheckELMA.Application.Controllers
             _context.Applications.Add(entity);
             if (!_context.TrySaveChangesAsync(this, out var result))
                 return result;
-            return CreatedAtAction("GetApplication", new { id = dto.Id }, entity);
+            return CreatedAtAction("GetApplication", new { id = entity.Id }, entity);
         }
 
         /// <summary>

@@ -9,7 +9,7 @@ public static class DbContextExtension
     {
         try
         {
-            _context.SaveChangesAsync();
+            _context.SaveChangesAsync().Wait();
             result = default!;
             return true;
         }
@@ -24,6 +24,10 @@ public static class DbContextExtension
         catch (OperationCanceledException) // OperationCanceledException - исключение, которое генерируется при отмене операции
         {
             result = controller.StatusCode(StatusCodes.Status503ServiceUnavailable, "Операция была отменена");
+        }
+        catch (Exception ex)
+        {
+            result = controller.StatusCode(StatusCodes.Status500InternalServerError, "Хуй!");
         }
         return false;
     }
