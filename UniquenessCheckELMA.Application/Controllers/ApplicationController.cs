@@ -82,7 +82,7 @@ namespace UniquenessCheckELMA.Application.Controllers
         /// <param name="dto"></param>
         /// <returns></returns>
         [HttpPost]
-        public async Task<ActionResult<ApplicationDTO>> PostApplication(ApplicationDTO dto)
+        public async Task<IActionResult> PostApplication(ApplicationDTO dto)
         {
             //if (!(dto.PhysicalPersonId > 9999999999999) && (dto.ProcessInstanceId < 100000000000000))
             //    return BadRequest("Охуевший?");
@@ -98,8 +98,8 @@ namespace UniquenessCheckELMA.Application.Controllers
                 entity.ProcessInstance = new() { Id = dto.ProcessInstanceId };
 
             _context.Applications.Add(dto);
-            await _context.SaveChangesAsync();
-
+            if (_context.TrySaveChangesAsync(this, out var result))
+                return result;
             return CreatedAtAction("GetApplication", new { id = dto.Id }, dto);
         }
 
