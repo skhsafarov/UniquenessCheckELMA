@@ -16,6 +16,5 @@ namespace UniquenessCheckELMA.Domain.Entities
         public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
 
         [JsonIgnore, InverseProperty(nameof(PhysicalPerson.Applications))] public virtual PhysicalPerson PhysicalPerson { get; set; } = null!;
-        [JsonIgnore, InverseProperty(nameof(ProcessInstance.Applications))] public virtual ProcessInstance ProcessInstance { get; set; } = null!;
     }
 }

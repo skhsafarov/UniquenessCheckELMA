@@ -32,7 +32,6 @@ namespace UniquenessCheckELMA.Infrastructure
         }
 
         public DbSet<Application> Applications { get; set; }
-        public DbSet<ProcessInstance> ProcessInstances { get; set; }
         public DbSet<PhysicalPerson> PhysicalPersons { get; set; }
     }
 }

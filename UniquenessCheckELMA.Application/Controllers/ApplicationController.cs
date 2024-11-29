@@ -87,15 +87,11 @@ namespace UniquenessCheckELMA.Application.Controllers
             //if (!(dto.PhysicalPersonId > 9999999999999) && (dto.ProcessInstanceId < 100000000000000))
             //    return BadRequest("Охуевший?");
             var physicalPerson = await _context.PhysicalPersons.FindAsync(dto.PhysicalPersonId);
-            var processInstance = await _context.ProcessInstances.FindAsync(dto.ProcessInstanceId);
             var entity = (ApplicationEntity)dto;
             if (physicalPerson is null)
             {
                 entity.PhysicalPerson = new() { Id = dto.PhysicalPersonId };
             }
-
-            if (processInstance is null)
-                entity.ProcessInstance = new() { Id = dto.ProcessInstanceId };
 
             _context.Applications.Add(entity);
             if (!_context.TrySaveChangesAsync(this, out var result))

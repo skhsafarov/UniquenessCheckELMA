@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Text;
+
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace UniquenessCheckELMA.Application;
@@ -27,7 +29,14 @@ public static class DbContextExtension
         }
         catch (Exception ex)
         {
-            throw ex;
+            var message = new StringBuilder();
+            var exception = ex;
+            while (exception != null)
+            {
+                message.AppendLine(exception.Message);
+                exception = exception.InnerException;
+            }
+            result = controller.Problem(message.ToString());
         }
         return false;
     }
