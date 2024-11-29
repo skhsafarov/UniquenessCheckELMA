@@ -7,6 +7,7 @@ namespace UniquenessCheckELMA.Domain.Entities
 {
     public class Application : Entity<long>
     {
+        public long? ClaimId { get; set; }
         public bool IsActive { get; set; }
         public string? Status { get; set; }
         public long PhysicalPersonId { get; set; }

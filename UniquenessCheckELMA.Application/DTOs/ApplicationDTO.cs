@@ -7,6 +7,7 @@ namespace UniquenessCheckELMA.Application.DTOs
     public class ApplicationDTO
     {
         public long Id { get; set; }
+        public string? ClaimId { get; set; }
         public string? Status { get; set; }
         public bool IsActive { get; set; }
         [Range(10000000000000, 99999999999999, ErrorMessage = "ПИНФЛ должен состоять и 14 цифр!")]
@@ -24,6 +25,7 @@ namespace UniquenessCheckELMA.Application.DTOs
             return new ApplicationDTO
             {
                 Id = entity.Id,
+                ClaimId = entity.ClaimId.ToString(),
                 Status = entity.Status,
                 IsActive = entity.IsActive,
                 PhysicalPersonId = entity.PhysicalPersonId,
@@ -41,6 +43,7 @@ namespace UniquenessCheckELMA.Application.DTOs
             return new Entity
             {
                 Id = dto.Id,
+                ClaimId = long.TryParse(dto.ClaimId, out long claimId) ? claimId : null,
                 Status = dto.Status,
                 IsActive = dto.IsActive,
                 PhysicalPersonId = dto.PhysicalPersonId,

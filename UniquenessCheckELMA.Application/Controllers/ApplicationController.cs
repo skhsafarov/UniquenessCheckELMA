@@ -97,10 +97,10 @@ namespace UniquenessCheckELMA.Application.Controllers
             if (processInstance is null)
                 entity.ProcessInstance = new() { Id = dto.ProcessInstanceId };
 
-            _context.Applications.Add(dto);
+            _context.Applications.Add(entity);
             if (!_context.TrySaveChangesAsync(this, out var result))
                 return result;
-            return CreatedAtAction("GetApplication", new { id = dto.Id }, dto);
+            return CreatedAtAction("GetApplication", new { id = dto.Id }, entity);
         }
 
         /// <summary>
