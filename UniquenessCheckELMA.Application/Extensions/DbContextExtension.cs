@@ -27,7 +27,7 @@ public static class DbContextExtension
         }
         catch (Exception ex)
         {
-            result = controller.StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            result = controller.StatusCode(StatusCodes.Status500InternalServerError, ex.InnerException?.Message);
         }
         return false;
     }
