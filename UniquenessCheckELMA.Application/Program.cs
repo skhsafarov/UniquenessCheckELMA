@@ -27,16 +27,16 @@ public class Program
         // Configure the HTTP request pipeline.
         app.MapDefaultEndpoints();
 
-        if (app.Environment.IsDevelopment())
-        {
+        //if (app.Environment.IsDevelopment())
+        //{
             app.UseSwagger();
             app.UseSwaggerUI();
-        }
+        //}
         app.UseCors();
         app.UseAuthentication();
         app.UseAuthorization();
 
-        app.UseHttpsRedirection();
+        //app.UseHttpsRedirection();
 
         app.UseAuthorization();
 

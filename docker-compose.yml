@@ -1,0 +1,6 @@
+services:
+  uniquenesscheckelma.application:
+    image: ${DOCKER_REGISTRY-}uniquenesscheckelmaapplication
+    build:
+      context: .
+      dockerfile: UniquenessCheckELMA.Application/Dockerfile

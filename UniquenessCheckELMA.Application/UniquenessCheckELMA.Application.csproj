@@ -8,6 +8,7 @@
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<NoWarn>$(NoWarn);1591</NoWarn>
+		<UserSecretsId>4fd52996-9869-4f28-b039-b93a308cf6f2</UserSecretsId>
 	</PropertyGroup>
 
 	<ItemGroup>
